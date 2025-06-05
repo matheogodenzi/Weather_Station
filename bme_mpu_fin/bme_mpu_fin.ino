@@ -4,7 +4,7 @@
 #include <Adafruit_BME280.h>
 
 // Create MPU6050 and BME280 objects
-MPU6050 mpu(Wire1);            // I2C address: 0x68
+MPU6050 mpu;            // I2C address: 0x68
 Adafruit_BME280 bme;    // I2C address: 0x76 or 0x77 (depending on your setup)
 
 byte message[] = {0x01, 0x03, 0x00, 0x00, 0x00, 0x01, 0x84, 0x0A}; // Trame MODBUS pour interroger le pyrano
